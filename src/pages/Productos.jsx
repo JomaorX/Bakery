@@ -1,18 +1,34 @@
+import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
+import productosData from "../data/products.json";
 
 function Productos() {
-    const productos = [
-        { id: 1, nombre: "Tarta de Chocolate", precio: 10 },
-        { id: 2, nombre: "Cheesecake de Fresa", precio: 12 },
-        { id: 3, nombre: "Macarons", precio: 8 },
-    ]
+    const [productos, setProductos] = useState([]);
+
+    useEffect(() => {
+        setProductos(productosData); // Simula cargar datos desde un archivo JSON
+    }, []);
+
     return (
         <div>
-            {productos.map((producto) => (
-        <ProductCard key={producto.id} producto={producto} />
-        ))}
+            <h2>Nuestros Productos</h2>
+            <div style={styles.grid}>
+                {productos.map((producto) => (
+                    <ProductCard key={producto.id} producto={producto} />
+                ))}
+            </div>
         </div>
-    )
+    );
 }
 
-export default Productos
+const styles = {
+    grid: {
+        display: "flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        gap: "20px",
+        padding: "20px",
+    }
+};
+
+export default Productos;

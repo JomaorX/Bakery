@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Tarta de queso La Viña",
+        "precio": 7.5,
+        "descripcion": "Pocos postres necesitan tan poca presentación como la tarta de queso La Viña del bar restaurante homónimo. Te explicamos la receta paso a paso para…",
+        "imagen": "/images/queso.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Tarta de Zanahoria",
+        "precio": 6,
+        "descripcion": "La tarta de zanahoria o carrot cake se ha convertido en un imprescindible en nuestros recetarios. Este clásico de la repostería anglosajona ha venido…",
+        "imagen": "/images/zanahoria.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "New York Cheesecake",
+        "precio": 8.5,
+        "descripcion": "La New York Cheesecake es una tarta de queso americana conocida a lo largo de todo el mundo. Con una base de galleta, un relleno cremoso de queso y…",
+        "imagen": "/images/newyork.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Tarta de Santiago",
+        "precio": 9.99,
+        "descripcion": "La tarta de Santiago es un postre tradicional gallego representativo de la ciudad que le da nombre. Su elaboración siguiendo la receta original es…",
+        "imagen": "/images/santiago.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Tarta de Limón",
+        "precio": 8.33,
+        "descripcion": "La tarta de limón es crujiente, cremosa, dulce y ácida, lo tiene todo en un mismo bocado. Resulta sencilla de preparar y la podemos tener lista con…",
+        "imagen": "/images/limon.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Brownie de Chocolate",
+        "precio": 5.25,
+        "descripcion": "Si necesitáis una dosis extra de chocolate, este brownie es la receta que estáis esperando. Extra húmedo, cremoso y delicioso. Os aseguro que no vais…",
+        "imagen": "/images/brownie.webp"
+    }
+]
