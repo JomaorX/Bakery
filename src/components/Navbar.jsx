@@ -1,16 +1,16 @@
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <nav>
-            <h1>Partelería Delicas</h1>
+            <h1>Pastelería Delicia</h1>
             <ul>
-                <li><Link to="/"></Link>Inicio</li>
+                <li><Link to="/">Inicio</Link></li>
                 <li><Link to="/productos">Productos</Link></li>
-                <li><Link to="/contacto"></Link>Contacto</li>
+                <li><Link to="/contacto">Contacto</Link></li>
             </ul>
-        </nav> >
-)
+        </nav>
+    );
 }
 
-export default Navbar
+export default Navbar;
