@@ -9,6 +9,18 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Permite que el contenido ocupe todo el espacio disponible */
 }
 
 nav {
@@ -64,8 +76,7 @@ nav {
 .navbar a:hover::after {
   transform: scaleX(1);
 }
-
-h2 {
+.news h2 {
   font-size: 2.5rem;
   color: #333;
   background-color: #FFD89B; 
@@ -75,11 +86,87 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Bienvenida */
+.news img {
+  width: 80%; 
+  max-width: 1100px; 
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.news #prin {
+  line-height: 1.6;
+  width: 80%; 
+  max-width: 1100px;
+  background-color: rgba(255, 216, 155, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  margin-top: 1rem;
+  display: block;
+}
+
+h2 {
+  margin: 10px auto;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #333;
+  background-color: #FFD89B; 
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-container {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.item-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.item-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #F3B178;
+  font-size: 1.2rem;
+}
+
 footer {
   background: #E69963;
-  position:relative;
   width: 100%;
-  bottom: 0;
   color: #FFF;
   padding: 1rem;
   display: flex;
@@ -98,4 +185,37 @@ footer .social-media {
 
 footer .social-media img {
   width: 24px;
+}
+
+.contact-container {
+  max-width: 800px; /* Ajusta según sea necesario */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #333;
+  background-color: #FFD89B;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.contact-info strong {
+  color: #333;
 }
